@@ -1,0 +1,127 @@
+<!-- 
+Day 3 Assignment: HTML Web Page by Ansari Aneequa
+Includes: Table, Form, Block vs Inline Elements, Iframe, and HTML Classes
+What I learned: I learned how to structure data using HTML tables, create interactive forms, 
+understand the difference between block and inline elements, embed external content using iframes, 
+and style and reuse design using classes.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 3 Assignment - Ansari Aneequa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .section {
+      margin-bottom: 40px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .highlight {
+      background-color: #f9f9f9;
+      padding: 5px;
+    }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    form label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="highlight">Day 3 Web Page – Ansari Aneequa</h1>
+
+  <!-- 1. Table Section -->
+  <div class="section">
+    <h2>Team Roles Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Member</th>
+          <th>Role</th>
+          <th>Contact</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Aneequa</td>
+          <td>Web Developer</td>
+          <td>aneequa@email.com</td>
+        </tr>
+        <tr>
+          <td>Rahul</td>
+          <td>UI/UX Designer</td>
+          <td>rahul@email.com</td>
+        </tr>
+        <tr>
+          <td>Sana</td>
+          <td>Tester</td>
+          <td>sana@email.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 2. Form Section -->
+  <div class="section">
+    <h2>Contact Form</h2>
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <!-- 3. Block & Inline Elements -->
+  <div class="section">
+    <h2>Block vs Inline Elements</h2>
+    <p class="highlight">Block elements appear on a new line (e.g., &lt;p&gt;, &lt;div&gt;, &lt;h1&gt;).</p>
+    <p>This is a block element.</p>
+    <p class="highlight">Inline elements stay in the same line (e.g., &lt;span&gt;, &lt;a&gt;, &lt;strong&gt;).</p>
+    <p>This is a <span style="color: red;">span</span> inside a paragraph.</p>
+  </div>
+
+  <!-- 4. Iframe -->
+  <div class="section">
+    <h2>Embedded Google Map</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.3398613400034!2d73.792043!3d18.642584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf9f8b04d07b%3A0x4d0d5a3913c2a9a5!2sSatana%20Naka%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1683712053423"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </div>
+
+  <!-- 5. HTML Classes -->
+  <div class="section">
+    <h2>Using HTML Classes</h2>
+    <p class="highlight">This paragraph uses the class "highlight".</p>
+    <p class="highlight">Classes help reuse styling for similar elements.</p>
+    <p class="section">This paragraph also uses the "section" class for box layout.</p>
+  </div>
+
+</body>
+</html>
